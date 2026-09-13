@@ -1,0 +1,29 @@
+@model StudentHub.Models.Student
+
+<h1>Create Student</h1>
+
+<form asp-action="Create" method="post">
+
+    <div>
+        <label asp-for="FirstName"></label>
+        <input asp-for="FirstName" />
+    </div>
+
+    <div>
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName" />
+    </div>
+
+    <div>
+        <label asp-for="EnrollmentDate"></label>
+        <input asp-for="EnrollmentDate" />
+    </div>
+
+    <div>
+        <label asp-for="AcceptedCodeOfConduct"></label>
+        <input asp-for="AcceptedCodeOfConduct" />
+    </div>
+
+    <button type="submit">Create</button>
+
+</form>
